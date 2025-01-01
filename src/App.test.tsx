@@ -8,4 +8,3 @@ test('renders the "Olá, Tailwind!" heading', () => {
   expect(headingElement).toBeInTheDocument();
   expect(headingElement).toHaveClass('text-red-600');
 });
-

@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+import StyleGuide from './pages/StyleGuide';
 
 function App() {
   return (
-    <>
-      <div className="min-h-screen bg-blue-500 flex items-center justify-center">
-        <h1 className="text-red-600 text-4xl">Olá, Tailwind!</h1>
-      </div>
-    </>
-  )
+    <main>
+      <Routes>
+        <Route path="/style-guide" element={<StyleGuide />} />
+      </Routes>
+    </main>
+  );
 }
-export default App
+export default App;
